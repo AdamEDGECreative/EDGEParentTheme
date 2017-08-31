@@ -83,7 +83,7 @@ function et__register_required_plugins() {
 		array(
 			'name'      => 'Advanced Custom Fields Extensions',
 			'slug'      => 'advanced-custom-fields-extensions',
-			'source'    => 'https://github.com/AdamEDGECreative/ACFExtensions/archive/master.zip',
+			'source'    => 'https://github.com/IAmAdamTaylor/ACFExtensions/archive/master.zip',
 			'required'  => true,
 		),
 
@@ -91,7 +91,7 @@ function et__register_required_plugins() {
 		array(
 			'name'      => 'Advanced Custom Fields: Flexible Content Field',
 			'slug'      => 'acf-flexible-content',
-			'source'    => 'https://github.com/AdamEDGECreative/ACFFlexibleContent/archive/master.zip',
+			'source'    => 'https://github.com/IAmAdamTaylor/ACFFlexibleContent/archive/master.zip',
 			'required'  => true,
 		),
 
@@ -99,7 +99,7 @@ function et__register_required_plugins() {
 		array(
 			'name'      => 'Advanced Custom Fields: Options Page',
 			'slug'      => 'acf-options-page',
-			'source'    => 'https://github.com/AdamEDGECreative/ACFOptions/archive/master.zip',
+			'source'    => 'https://github.com/IAmAdamTaylor/ACFOptions/archive/master.zip',
 			'required'  => true,
 		),
 
@@ -107,7 +107,7 @@ function et__register_required_plugins() {
 		array(
 			'name'      => 'Advanced Custom Fields: Repeater Field',
 			'slug'      => 'acf-repeater',
-			'source'    => 'https://github.com/AdamEDGECreative/ACFRepeater/archive/master.zip',
+			'source'    => 'https://github.com/IAmAdamTaylor/ACFRepeater/archive/master.zip',
 			'required'  => true,
 		),
 
@@ -115,7 +115,7 @@ function et__register_required_plugins() {
 		array(
 			'name'      => 'EDGE Theme Extensions',
 			'slug'      => 'edge-template-extensions',
-			'source'    => 'https://github.com/AdamEDGECreative/EDGETemplateExtensions/archive/master.zip',
+			'source'    => 'https://github.com/IAmAdamTaylor/EDGETemplateExtensions/archive/master.zip',
 			'required'  => true,
 		),
 
@@ -123,7 +123,7 @@ function et__register_required_plugins() {
 		array(
 			'name'      => 'WordPress Menu Query',
 			'slug'      => 'wordpress-menu-query',
-			'source'    => 'https://github.com/AdamEDGECreative/WordPressMenuQuery/archive/master.zip',
+			'source'    => 'https://github.com/IAmAdamTaylor/WP_Menu_Query/archive/master.zip',
 			'required'  => true,
 		),
 
@@ -133,7 +133,7 @@ function et__register_required_plugins() {
 		array(
 			'name'      => 'Advanced Custom Fields: Gallery Field',
 			'slug'      => 'acf-gallery',
-			'source'    => 'https://github.com/AdamEDGECreative/ACFGallery/archive/master.zip',
+			'source'    => 'https://github.com/IAmAdamTaylor/ACFGallery/archive/master.zip',
 			'required'  => false,
 		),
 
