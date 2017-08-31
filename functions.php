@@ -25,6 +25,45 @@ _load_functions( 'tgm-plugin-activation/tgm-plugin-settings' );
 _load_functions( 'asset-paths' );
 
 /**
+ * Gets a template part and passes in variables from the executing context.
+ * @param  array $context            An array of variables to create for use in the template part.
+ *                                   The keys are the variable name and the value is the variable value.
+ * @param  string $template_name     The main template part name.
+ * @param  string $sub_template_name Optional. If specified will be added to the template_name 
+ *                                   separated by a dash.
+ */
+function get_template_part_with_context( $context, $template_name, $sub_template_name = null ) {
+	// Sanity check
+	if ( !is_array( $context ) ) {
+		throw new Exception("\$context must be an array for get_template_part_with_context()", 1);
+	}
+
+	// Generate full template name
+	if ( null !== $sub_template_name ) {
+		$template_name .= '-' . $sub_template_name;
+	}
+
+	if ( false === strpos( $template_name, '.php' ) ) {
+		$template_name .= '.php';
+	}
+
+	// Find that template
+	$template = locate_template( $template_name );
+
+	if ( $template ) {
+
+		if ( count( $context ) > 0 ) {
+			// Create the context as local variables
+			extract( $context );
+		}
+
+		include $template;
+		
+	}
+
+}
+
+/**
  * Load assets
  */
 _load_functions( 'enqueue-styles' );
