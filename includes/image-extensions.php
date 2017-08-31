@@ -7,6 +7,7 @@
 function et_get_theme_image_sizes() {
   $image_sizes = array();
 
+  /** Example
   $image_sizes[ 'banner' ] = array(
     'width' => 1600,
     'height' => 500,
@@ -16,9 +17,10 @@ function et_get_theme_image_sizes() {
      * false = soft crop, the whole image will be visible but may not 
      *         be the exact width and height specified above.
      *         The image will be scaled to the largest of the 2 dimensions.
-     */
+    * /
     'hard_crop' => true,
   );
+  //*/
 
   /**
    * Filter the image sizes.

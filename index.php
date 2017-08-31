@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The main template file.
  *
@@ -11,8 +12,16 @@
  *
  */
 
-// If home page is a static page generated from a page template
-// simply redirect users to that page
-// wp_redirect(home_url());
-// exit;
+get_header();
+
 ?>
+
+<?php
+
+// Since this is the most generic single template, load the page.php
+get_template_part( 'page' );
+
+?>
+
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>

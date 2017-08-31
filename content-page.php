@@ -11,4 +11,6 @@
 	<h2 class="title"><?php echo get_the_title(); ?></h2>
 	<?php the_excerpt(); ?>
 
+	<a href="<?php echo get_the_permalink(); ?>">View page</a>
+
 </article><!-- #post -->

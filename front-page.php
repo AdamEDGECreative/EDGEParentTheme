@@ -10,13 +10,20 @@
 
 get_header(); 
 
+?>
+
+<?php
+
 /**
- * Due to possible dynamic nature of home page,
+ * Since the home page is normally quite dynamic,
+ * and we can not accurately predict what is needed,
  * pass this off to the default page template instead.
- * Can be overwritten in child theme.
+ * 
+ * Can (and probably should) be overwritten in child theme.
  */
 get_template_part( 'page' );
 
 ?>
 
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
