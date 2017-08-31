@@ -19,7 +19,7 @@ get_header();
 	?>
 
 	<div class="container">
-		<?php get_template_part('content', 'page') ?>
+		<?php get_template_part('content', 'single-page') ?>
 	</div>
 	
 <?php endwhile; ?>

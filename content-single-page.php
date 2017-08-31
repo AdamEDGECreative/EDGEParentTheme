@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The template used for displaying page content in the loop
+ * The template used for displaying a single page's content in page.php
  */
 
 ?>
@@ -9,6 +9,8 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
 					
 	<h2 class="title"><?php echo get_the_title(); ?></h2>
-	<?php the_excerpt(); ?>
+	<div class="s-cms-content">
+		<?php the_content(); ?>
+	</div>
 
 </article><!-- #post -->

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The template used for displaying page content in the loop
+ * The template used for displaying generic post content in the loop
  */
 
 ?>
